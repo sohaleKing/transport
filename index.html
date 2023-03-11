@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>Atlas Taxi Inc.</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/royal-preload.css" />
+  </head>
+
+  <body class="royal_preloader">
+    <div id="page" class="site">
+      <div id="content" class="site-content">
+        <section class="coming-soon">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <div class="cs-content">
+                  <img
+                    src="images/logo.png"
+                    class="attachment-full size-full"
+                    alt=""
+                  />
+                  <h2>En cours de réalisation...</h2>
+                  <ul
+                    class="ot-countdown unstyle"
+                    data-zone="0"
+                    data-date="01/04/2023"
+                    data-day="Day"
+                    data-days="Days"
+                    data-hour="Hour"
+                    data-hours="Hours"
+                    data-min="Minute"
+                    data-mins="Minutes"
+                    data-second="Second"
+                    data-seconds="Seconds"
+                    id="rev_slider_1"
+                  >
+                    <li>
+                      <span class="days" id="t_days"></span>
+                      <p class="days_text">Jours</p>
+                    </li>
+                    <li class="seperator">:</li>
+                    <li>
+                      <span class="hours" id="t_hours"></span>
+                      <p class="hours_text">Heures</p>
+                    </li>
+                    <li class="seperator">:</li>
+                    <li>
+                      <span class="minutes" id="t_minutes"></span>
+                      <p class="minutes_text">Minutes</p>
+                    </li>
+                    <li class="seperator">:</li>
+                    <li>
+                      <span class="seconds" id="t_seconds"></span>
+                      <p class="seconds_text">Secondes</p>
+                    </li>
+                  </ul>
+                  <p>Pour l`instant notre site se trouve en préparation.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-consultation">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <p>Nous sommes toujours ravis de vous aider 24/7</p>
+                <h2>Il me faut un taxi!</h2>
+                <div class="ot-button">
+                  <a
+                    href="https://atlastaxi.megataxi.com/"
+                    class="octf-btn octf-btn-primary"
+                    >Appelez-moi un taxi</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="space-30"></div>
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <a href="https://apps.apple.com/ca/app/taxi-atlas/id824050255"
+                  ><img src="images/btn-ios.png" alt="ios"
+                /></a>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.megataxi.android.atlastaxi2"
+                  ><img src="images/btn-android.png" alt="android"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer id="site-footer" class="site-footer footer-v2">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-4 col-sm-6">
+              <div class="contact-info box-style2 ft-contact-info">
+                <div class="box-icon"><i class="flaticon-world-globe"></i></div>
+                <p>2194 av Regent, Montréal, QC H4A 2R1</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="contact-info box-style2 ft-contact-info">
+                <div class="box-icon"><i class="flaticon-envelope"></i></div>
+                <a href="mailto: info@atlastaxi.qc.ca"
+                  ><p>info@atlastaxi.qc.ca</p></a
+                >
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="contact-info box-style2 ft-contact-info">
+                <div class="box-icon"><i class="flaticon-phone-1"></i></div>
+                <a href="tel:+1 514-485-8585"><p>+1 (514) 485-8585</p></a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p class="copyright-text v2">© Atlas Taxi Inc. 2023</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- #site-footer -->
+    </div>
+    <!-- #page -->
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/royal_preloader.min.js"></script>
+    <script>
+      window.jQuery = window.$ = jQuery;
+      (function ($) {
+        "use strict";
+        //Preloader
+        Royal_Preloader.config({
+          mode: "logo",
+          logo: "images/logo.svg",
+          logo_size: [160, 75],
+          showProgress: true,
+          showPercentage: true,
+          text_colour: "#000000",
+          background: "#ffffff",
+        });
+      })(jQuery);
+    </script>
+    <script defer>
+      let countDownDate = new Date("Apr 10, 2023 23:59:59").getTime();
+
+      const countDown = setInterval(function () {
+        let now = new Date().getTime();
+        let distance = countDownDate - now;
+        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        let hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        document.getElementById("t_days").innerHTML = days;
+        document.getElementById("t_hours").innerHTML = hours;
+        document.getElementById("t_minutes").innerHTML = minutes;
+        document.getElementById("t_seconds").innerHTML = seconds;
+
+        if (distance < 0) {
+          clearInterval(countDown);
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
