@@ -20,6 +20,19 @@
     <div id="page" class="site">
       <div id="content" class="site-content">
         <section class="coming-soon">
+          <div class="language-selector">
+            <form action="" id="language-selector">
+              <select
+                name="languages"
+                id="languages"
+                onchange="changeLanguage(this.value)"
+              >
+                <option value="french">Français</option>
+                <option value="english">English</option>
+              </select>
+            </form>
+          </div>
+
           <div class="container">
             <div class="row">
               <div class="col-lg-12 text-center">
@@ -89,11 +102,11 @@
             <div class="row">
               <div class="col-md-12 text-center">
                 <a href="https://apps.apple.com/ca/app/taxi-atlas/id824050255"
-                  ><img src="images/btn-ios.png" alt="ios"
+                  ><img src="images/btn-ios.png" width="15%" alt="ios"
                 /></a>
                 <a
                   href="https://play.google.com/store/apps/details?id=com.megataxi.android.atlastaxi2"
-                  ><img src="images/btn-android.png" alt="android"
+                  ><img src="images/btn-android.png" width="15%" alt="android"
                 /></a>
               </div>
             </div>
@@ -106,7 +119,9 @@
             <div class="col-md-4 col-sm-6">
               <div class="contact-info box-style2 ft-contact-info">
                 <div class="box-icon"><i class="flaticon-world-globe"></i></div>
-                <p>2194 av Regent, Montréal, QC H4A 2R1</p>
+                <a href="https://goo.gl/maps/oY5ikkaUkgrHaGXJ9"
+                  ><p>2194 av Regent, Montréal, QC H4A 2R1</p></a
+                >
               </div>
             </div>
             <div class="col-md-4 col-sm-6">
@@ -155,9 +170,16 @@
       })(jQuery);
     </script>
     <script defer>
+      const changeLanguage = (selected) => {
+        if (selected === "english") {
+          location.href = "https://atlastaxi.qc.ca/en";
+        } else {
+          location.href = "https://atlastaxi.qc.ca/";
+        }
+      };
       let countDownDate = new Date("Apr 10, 2023 23:59:59").getTime();
 
-      const countDown = setInterval(function () {
+      const simpleCountDown = setInterval(function () {
         let now = new Date().getTime();
         let distance = countDownDate - now;
         let days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -172,7 +194,7 @@
         document.getElementById("t_seconds").innerHTML = seconds;
 
         if (distance < 0) {
-          clearInterval(countDown);
+          clearInterval(simpleCountDown);
         }
       }, 1000);
     </script>

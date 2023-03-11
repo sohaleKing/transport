@@ -14141,6 +14141,15 @@ svg:not(:root) {
   padding-top: 0;
   padding-bottom: 0;
 }
+.language-selector {
+  float: right;
+  padding: 15px 15px;
+}
+select {
+  background: #000 !important;
+  color: #fff !important;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4) !important;
+}
 .cs-content img {
   padding-top: 60px;
   padding-bottom: 100px;
