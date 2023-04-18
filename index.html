@@ -21,21 +21,142 @@
 
   <body class="royal_preloader">
     <div id="page" class="site">
+      <header id="site-header" class="site-header header-style header-fullwidth sticky-header header-static">
+          <!-- Main Header start -->
+          <div class="header-topbar">
+              <div class="area-wrap">
+                  <div class="container-fluid">
+                      <div class="row">
+                          <div class="col-md-6">
+                              <ul class="topbar-info">
+                                  <li><i class="fas fa-envelope"></i><a href="mailto:info@atlastaxi.qc.ca">
+                                         info@atlastaxi.qc.ca</a></li>
+                                  <li><i class="fas fa-clock"></i>24 heures sur 24, 7 jours sur 7</li>
+                              </ul>
+                          </div>
+                          <div class="col-md-6 text-right">
+                              <div class="topbar-right">
+                                  <ul class="extra-text">
+                                      <li>Atlas Taxi Inc. <a href="contact.html">Savoir plus</a></li>
+                                  </ul>
+                                  <ul class="social-list">
+                                    <!-- Atlas Taxi Future Social Medias -->
+                                          <li><a href="" target="_self"><i
+                                                  class="fab fa-facebook-f"></i></a></li>
+                                      <li><a href=""
+                                              target="_self"><i class="fab fa-linkedin-in"></i></a></li>
+                                      <li><a href="" target="_self"><i
+                                                  class="fab fa-instagram"></i></a></li>
+                                      <li>
+                                        <form action="" id="language-selector">
+                                          <select
+                                            name="languages"
+                                            id="languages"
+                                            onchange="changeLanguage(this.value)"
+                                          >
+                                            <option value="french">Français</option>
+                                            <option value="english">English</option>
+                                          </select>
+                                        </form>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="main-header">
+              <div class="area-wrap">
+                  <div class="container-fluid mainbar-container">
+                      <div class="mainbar">
+                          <div class="mainbar-row row">
+                              <div class="col logo-col">
+                                  <div id="site-logo" class="site-logo">
+                                      <a href="index.html">
+                                          <img src="images/logo.png" alt="AtlasTaxiLogo" class="">
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col menu-col">
+                                  <nav id="site-navigation" class="main-navigation">
+                                      <ul class="menu">
+                                          <li>
+                                              <a href="index.html">Accueil</a>
+                                          </li>
+                                          <li><a href="#">À propos</a>
+                                          </li>
+                                          <li><a href="#">Services</a>
+                                          </li>
+                                          <li><a href="#">Ouvrir un Compte</a>
+                                          </li>
+                                          <li><a href="#">Appelez-moi un Taxi</a>
+                                          </li>
+                                          <li><a href="#">tarifs des taxis</a>
+                                          </li>
+                                          <li><a href="#">Contact</a></li>
+                                      </ul>
+                                  </nav>
+                              </div>
+                              <div class="col cta-col text-right">
+                                  <!-- Call To Action -->
+                                  <div class="btn-cta">
+                                      <div class="header-module">
+                                          <div class="btn-cta-group contact-header">
+                                              <i class="fas fa-phone"></i>
+                                              <div class="cinfo-header">
+                                                  <span class="small-text" style="margin-right: 10px;"><a
+                                                          href="tel:+1-514-485-8585">+1 (514) 485-8585 </a></span>
+                                              </div>
+                                          </div>
+                                      </div>
+
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="header_mobile">
+              <div class="container">
+                  <div class="mlogo_wrapper clearfix">
+                      <div class="mobile_logo">
+                          <a href="index.html">
+                              <img src="images/logo.png" alt="Atlas Taxi Inc.">
+                          </a>
+                      </div>
+                      <div id="mmenu_toggle">
+                          <button></button>
+                      </div>
+                  </div>
+                  <div class="mmenu_wrapper">
+                      <div class="mobile_nav collapse">
+                          <ul id="menu-main-menu" class="mobile_mainmenu">
+                              <li>
+                                  <a href="index.html">Accueil</a>
+                              </li>
+                              <li><a href="#">À propos</a>
+                              </li>
+                              <li><a href="#">Services</a>
+                              </li>
+                              <li><a href="#">Ouvrir un Compte</a>
+                              </li>
+                              <li><a href="#">Appelez-moi un Taxi</a>
+                              </li>
+                              <li><a href="#">tarifs des taxis</a>
+                              </li>
+                              </li>
+                              <li><a href="#">Contact</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </header>
+    <div id="page" class="site">
       <div id="content" class="site-content">
         <section class="coming-soon">
-          <div class="language-selector">
-            <form action="" id="language-selector">
-              <select
-                name="languages"
-                id="languages"
-                onchange="changeLanguage(this.value)"
-              >
-                <option value="french">Français</option>
-                <option value="english">English</option>
-              </select>
-            </form>
-          </div>
-
           <div class="container">
             <div class="row">
               <div class="col-lg-12 text-center">
@@ -96,7 +217,7 @@
                   <a
                     href="https://atlastaxi.megataxi.com/"
                     class="octf-btn octf-btn-primary"
-                    >Appelez-moi un taxi</a
+                    >Appelez pour un taxi</a
                   >
                 </div>
               </div>
@@ -180,7 +301,7 @@
           location.href = "http://atlastaxi.qc.ca/";
         }
       };
-      let countDownDate = new Date("Apr 24, 2023 23:59:59").getTime();
+      let countDownDate = new Date("Apr 30, 2023 23:59:59").getTime();
 
       const simpleCountDown = setInterval(function () {
         let now = new Date().getTime();
