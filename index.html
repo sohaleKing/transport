@@ -54,8 +54,8 @@
                                             id="languages"
                                             onchange="changeLanguage(this.value)"
                                           >
-                                            <option value="french">Français</option>
-                                            <option value="english">English</option>
+                                          <option value="french" id="fr">Français</option>
+                                          <option value="english" id="en">English</option>
                                           </select>
                                         </form>
                                       </li>
@@ -84,7 +84,7 @@
                                           <li>
                                               <a href="index.html">Accueil</a>
                                           </li>
-                                          <li><a href="#">À propos</a>
+                                          <li><a href="about.html">À propos</a>
                                           </li>
                                           <li><a href="#">Services</a>
                                           </li>
@@ -137,7 +137,7 @@
                               <li>
                                   <a href="index.html">Accueil</a>
                               </li>
-                              <li><a href="index.html">À propos</a>
+                              <li><a href="about.html">À propos</a>
                               </li>
                               <li><a href="#">Services</a>
                               </li>
@@ -162,11 +162,12 @@
             <div class="row">
               <div class="col-lg-12 text-center">
                 <div class="cs-content">
-                  <img
+                  <!-- <img
                     src="images/logo.png"
                     class="attachment-full size-full"
                     alt=""
-                  />
+                  /> -->
+                  <p style="margin-top: 350px;">Pour l`instant notre site se trouve en préparation.</p>
                   <h2>En cours de réalisation...</h2>
                   <ul
                     class="ot-countdown unstyle"
@@ -202,7 +203,6 @@
                       <p class="seconds_text">Secondes</p>
                     </li>
                   </ul>
-                  <p>Pour l`instant notre site se trouve en préparation.</p>
                 </div>
               </div>
             </div>
@@ -278,6 +278,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/royal_preloader.min.js"></script>
+    <script src="js/header-mobile.js"></script>
     <script>
       window.jQuery = window.$ = jQuery;
       (function ($) {
@@ -295,11 +296,21 @@
       })(jQuery);
     </script>
     <script defer>
+      let selectedLanguage = localStorage.getItem('selectedLanguage')
+    //   if(selectedLanguage==='french') {
+    //     document.getElementById('fr').setAttribute('selected','selected')
+    //   }
+    //   if(selectedLanguage==='english') {
+    //     document.getElementById('en').setAttribute('selected','selected')
+    // }
+    </script>
+    <script defer>
       const changeLanguage = (selected) => {
+        localStorage.setItem('selectedLanguage', selected)
         if (selected === "english") {
           location.href = "http://atlastaxi.qc.ca/index-en.html";
         } else {
-          location.href = "http://atlastaxi.qc.ca/";
+          location.href = "http://atlastaxi.qc.ca/index.html";
         }
       };
       let countDownDate = new Date("Apr 30, 2023 23:59:59").getTime();

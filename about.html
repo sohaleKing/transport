@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="Atlas Taxi Inc." name="description" />
+    <meta content="Soheyl Rahgozar" name="author" />
+    <meta content="taxi montreal" name="keywords" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>Atlas Taxi Inc.</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header id="site-header" class="site-header header-style header-fullwidth sticky-header header-static">
+      <!-- Main Header start -->
+      <div class="header-topbar">
+          <div class="area-wrap">
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-md-6">
+                          <ul class="topbar-info">
+                              <li><i class="fas fa-envelope"></i><a href="mailto:info@atlastaxi.qc.ca">
+                                     info@atlastaxi.qc.ca</a></li>
+                              <li><i class="fas fa-clock"></i>24 heures sur 24, 7 jours sur 7</li>
+                          </ul>
+                      </div>
+                      <div class="col-md-6 text-right">
+                          <div class="topbar-right">
+                              <ul class="extra-text">
+                                  <li>Atlas Taxi Inc. <a href="contact.html">Savoir plus</a></li>
+                              </ul>
+                              <ul class="social-list">
+                                <!-- Atlas Taxi Future Social Medias -->
+                                      <li><a href="" target="_self"><i
+                                              class="fab fa-facebook-f"></i></a></li>
+                                  <li><a href=""
+                                          target="_self"><i class="fab fa-linkedin-in"></i></a></li>
+                                  <li><a href="" target="_self"><i
+                                              class="fab fa-instagram"></i></a></li>
+                                  <li>
+                                    <form action="" id="language-selector">
+                                      <select
+                                        name="languages"
+                                        id="languages"
+                                        onchange="changeLanguage(this.value)"
+                                      >
+                                      <option value="english">English</option>
+                                        <option value="french">Français</option>
+                                      </select>
+                                    </form>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="main-header">
+          <div class="area-wrap">
+              <div class="container-fluid mainbar-container">
+                  <div class="mainbar">
+                      <div class="mainbar-row row">
+                          <div class="col logo-col">
+                              <div id="site-logo" class="site-logo">
+                                  <a href="index.html">
+                                      <img src="images/logo.png" alt="AtlasTaxiLogo" class="">
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="col menu-col">
+                              <nav id="site-navigation" class="main-navigation">
+                                  <ul class="menu">
+                                      <li>
+                                          <a href="index.html">Accueil</a>
+                                      </li>
+                                      <li><a href="about.html">À propos</a>
+                                      </li>
+                                      <li><a href="#">Services</a>
+                                      </li>
+                                      <li><a href="atlasForm.html">Ouvrir un Compte</a>
+                                      </li>
+                                      <li><a href="https://atlastaxi.megataxi.com/">Appelez-moi un Taxi</a>
+                                      </li>
+                                      <li><a href="#">Tarifs des taxis</a>
+                                      </li>
+                                      <li><a href="#">Contact</a></li>
+                                  </ul>
+                              </nav>
+                          </div>
+                          <div class="col cta-col text-right">
+                              <!-- Call To Action -->
+                              <div class="btn-cta">
+                                  <div class="header-module">
+                                      <div class="btn-cta-group contact-header">
+                                          <i class="fas fa-phone"></i>
+                                          <div class="cinfo-header">
+                                            <span>Avez-vous des questions?</span>
+                                              <span class="small-text" style="margin-right: 10px;"><a
+                                                      href="tel:+1-514-485-8585">+1 (514) 485-8585 </a></span>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="header_mobile">
+          <div class="container">
+              <div class="mlogo_wrapper clearfix">
+                  <div class="mobile_logo">
+                      <a href="index.html">
+                          <img src="images/logo.png" alt="Atlas Taxi Inc.">
+                      </a>
+                  </div>
+                  <div id="mmenu_toggle">
+                      <button></button>
+                  </div>
+              </div>
+              <div class="mmenu_wrapper">
+                  <div class="mobile_nav collapse">
+                      <ul id="menu-main-menu" class="mobile_mainmenu">
+                          <li>
+                              <a href="index.html">Accueil</a>
+                          </li>
+                          <li><a href="about.html">À propos</a>
+                          </li>
+                          <li><a href="#">Services</a>
+                          </li>
+                          <li><a href="atlasForm.html">Ouvrir un Compte</a>
+                          </li>
+                          <li><a href="https://atlastaxi.megataxi.com/">Appelez-moi un Taxi</a>
+                          </li>
+                          <li><a href="#">Tarifs des taxis</a>
+                          </li>
+                          </li>
+                          <li><a href="#">Contact</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+  <div id="content" class="site-content">
+    <section class="about-v5">
+        <div class="overlay overlay-image-about5"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 align-self-center">
+                    <div class="pabout-left">
+                        <img src="images/about-us-page.png" alt="about Atlas Taxi Inc.">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="pabout-right">
+                        <div class="ot-heading">
+                            <span>// Atlas Taxi Inc</span>
+                            <h2 class="main-heading">À propos de nous</h2>
+                        </div>
+                        <h5>Aperçu</h5>
+                        <p>Nous avons commencé nos opérations le 1er juin 1988 avec un simple téléphone de bureau, une station de radio simplex sur le toit de notre immeuble et une flotte de 30 voitures compactes entièrement basées à Westmount.
+
+                            Malgré la récession du début des années 90 et la situation difficile, notre entreprise a connu une croissance constante et régulière tout au long de ses 24 ans d'histoire.
+                            
+                            Nous fournissons un service de taxi dans tout le West End et le centre-ville avec 235 véhicules. Tous nos véhicules sont de grosses voitures. Plus de 100 voitures de luxe entièrement équipées sont hybrides (2 ans ou moins). Nous avons également des mini-fourgonnettes disponibles pour les petits travaux de déménagement.
+                            
+                            Au cours des douze derniers mois, nous avons reçu et expédié plus de 800 000 appels. Pour gérer ce volume de trafic, nous utilisons maintenant 30 lignes téléphoniques et trois canaux radio diffusant à partir de notre nouvel émetteur au sommet de la montagne. Tous nos véhicules sont équipés de système GPS.
+                            
+                            Notre entreprise s'adresse à la fois aux clients résidentiels et commerciaux.</p>
+                        <div class="ot-button">
+                            <a href=""
+                                class="btn-details"><i class="flaticon-right-arrow-1"></i> Contactez-nous</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-consultation">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p>Nous sommes toujours ravis de vous aider 24/7</p>
+              <h2>Il me faut un taxi!</h2>
+              <div class="ot-button">
+                <a
+                  href="https://atlastaxi.megataxi.com/"
+                  class="octf-btn octf-btn-primary"
+                  >Appelez pour un taxi</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="space-30"></div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <a href="https://apps.apple.com/ca/app/taxi-atlas/id824050255"
+                ><img src="images/btn-ios.png" width="15%" alt="ios"
+              /></a>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.megataxi.android.atlastaxi2"
+                ><img src="images/btn-android.png" width="15%" alt="android"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+</div>
+
+      <footer id="site-footer" class="site-footer footer-v2">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-4 col-sm-6">
+              <div class="contact-info box-style2 ft-contact-info">
+                <div class="box-icon"><i class="flaticon-world-globe"></i></div>
+                <a href="https://goo.gl/maps/oY5ikkaUkgrHaGXJ9"
+                  ><p>2194 Regent Avenue, Montreal, QC H4A 2R1</p></a
+                >
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="contact-info box-style2 ft-contact-info">
+                <div class="box-icon"><i class="flaticon-envelope"></i></div>
+                <a href="mailto: info@atlastaxi.qc.ca"
+                  ><p>info@atlastaxi.qc.ca</p></a
+                >
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="contact-info box-style2 ft-contact-info">
+                <div class="box-icon"><i class="flaticon-phone-1"></i></div>
+                <a href="tel:+1 514-485-8585"><p>+1 (514) 485-8585</p></a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p class="copyright-text v2">© Atlas Taxi Inc. 2023</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- #site-footer -->
+    <!-- #page -->
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
+    <script defer>
+      const changeLanguage = (selected) => {
+        if (selected === "english") {
+          location.href = "http://atlastaxi.qc.ca/index-en.html";
+        } else {
+          location.href = "http://atlastaxi.qc.ca/";
+        }
+      };
+    </script>
+  </body>
+</html>
