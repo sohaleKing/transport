@@ -1,160 +1,157 @@
 <!DOCTYPE html>
 <html lang="fr-CA">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta content="Atlas Taxi Inc." name="description" />
-    <meta content="Soheyl Rahgozar" name="author" />
-    <meta content="taxi montreal" name="keywords" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
-    <title>Atlas Taxi Inc.</title>
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/flaticon.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="css/royal-preload.css" />
-  </head>
 
-  <body class="royal_preloader">
-    <div id="page" class="site">
-      <header id="site-header" class="site-header header-style header-fullwidth sticky-header header-static">
-          <!-- Main Header start -->
-          <div class="header-topbar">
-              <div class="area-wrap">
-                  <div class="container-fluid">
-                      <div class="row">
-                          <div class="col-md-6">
-                              <ul class="topbar-info">
-                                  <li><i class="fas fa-envelope"></i><a href="mailto:info@atlastaxi.qc.ca">
-                                         info@atlastaxi.qc.ca</a></li>
-                                  <li><i class="fas fa-clock"></i>24 heures sur 24, 7 jours sur 7</li>
-                              </ul>
-                          </div>
-                          <div class="col-md-6 text-right">
-                              <div class="topbar-right">
-                                  <ul class="extra-text">
-                                      <li>Atlas Taxi Inc. <a href="contact.html">Savoir plus</a></li>
-                                  </ul>
-                                  <ul class="social-list">
-                                    <!-- Atlas Taxi Future Social Medias -->
-                                          <li><a href="" target="_self"><i
-                                                  class="fab fa-facebook-f"></i></a></li>
-                                      <li><a href=""
-                                              target="_self"><i class="fab fa-linkedin-in"></i></a></li>
-                                      <li><a href="" target="_self"><i
-                                                  class="fab fa-instagram"></i></a></li>
-                                      <li>
-                                        <form action="" id="language-selector">
-                                          <select
-                                            name="languages"
-                                            id="languages"
-                                            onchange="changeLanguage(this.value)"
-                                          >
-                                          <option value="french" id="fr">Français</option>
-                                          <option value="english" id="en">English</option>
-                                          </select>
-                                        </form>
-                                      </li>
-                                  </ul>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="main-header">
-              <div class="area-wrap">
-                  <div class="container-fluid mainbar-container">
-                      <div class="mainbar">
-                          <div class="mainbar-row row">
-                              <div class="col logo-col">
-                                  <div id="site-logo" class="site-logo">
-                                      <a href="index.html">
-                                          <img src="images/logo.png" alt="AtlasTaxiLogo" class="">
-                                      </a>
-                                  </div>
-                              </div>
-                              <div class="col menu-col">
-                                  <nav id="site-navigation" class="main-navigation">
-                                      <ul class="menu">
-                                          <li>
-                                              <a href="index.html">Accueil</a>
-                                          </li>
-                                          <li><a href="about.html">À propos</a>
-                                          </li>
-                                          <li><a href="#">Services</a>
-                                          </li>
-                                          <li><a href="#">Ouvrir un Compte</a>
-                                          </li>
-                                          <li><a href="https://atlastaxi.megataxi.com/">Appelez-moi un Taxi</a>
-                                          </li>
-                                          <li><a href="#">Tarifs des taxis</a>
-                                          </li>
-                                          <li><a href="#">Contact</a></li>
-                                      </ul>
-                                  </nav>
-                              </div>
-                              <div class="col cta-col text-right">
-                                  <!-- Call To Action -->
-                                  <div class="btn-cta">
-                                      <div class="header-module">
-                                          <div class="btn-cta-group contact-header">
-                                              <i class="fas fa-phone"></i>
-                                              <div class="cinfo-header">
-                                                <span>Avez-vous des questions?</span>
-                                                  <span class="small-text" style="margin-right: 10px;"><a
-                                                          href="tel:+1-514-485-8585">+1 (514) 485-8585 </a></span>
-                                              </div>
-                                          </div>
-                                      </div>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta content="Atlas Taxi Inc." name="description" />
+  <meta content="Soheyl Rahgozar" name="author" />
+  <meta content="taxi montreal" name="keywords" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Atlas Taxi Inc.</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/flaticon.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/royal-preload.css" />
+</head>
 
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+<body class="royal_preloader">
+  <div id="page" class="site">
+    <header id="site-header" class="site-header header-style header-fullwidth sticky-header header-static">
+      <!-- Main Header start -->
+      <div class="header-topbar">
+        <div class="area-wrap">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                <ul class="topbar-info">
+                  <li><i class="fas fa-envelope"></i><a href="mailto:info@atlastaxi.qc.ca">
+                      info@atlastaxi.qc.ca</a></li>
+                  <li><i class="fas fa-clock"></i>24 heures sur 24, 7 jours sur 7</li>
+                </ul>
               </div>
-          </div>
-          <div class="header_mobile">
-              <div class="container">
-                  <div class="mlogo_wrapper clearfix">
-                      <div class="mobile_logo">
-                          <a href="index.html">
-                              <img src="images/logo.png" alt="Atlas Taxi Inc.">
-                          </a>
-                      </div>
-                      <div id="mmenu_toggle">
-                          <button></button>
-                      </div>
-                  </div>
-                  <div class="mmenu_wrapper">
-                      <div class="mobile_nav collapse">
-                          <ul id="menu-main-menu" class="mobile_mainmenu">
-                              <li>
-                                  <a href="index.html">Accueil</a>
-                              </li>
-                              <li><a href="about.html">À propos</a>
-                              </li>
-                              <li><a href="#">Services</a>
-                              </li>
-                              <li><a href="#">Ouvrir un Compte</a>
-                              </li>
-                              <li><a href="https://atlastaxi.megataxi.com/">Appelez-moi un Taxi</a>
-                              </li>
-                              <li><a href="#">Tarifs des taxis</a>
-                              </li>
-                              </li>
-                              <li><a href="#">Contact</a></li>
-                          </ul>
-                      </div>
-                  </div>
+              <div class="col-md-6 text-right">
+                <div class="topbar-right">
+                  <ul class="extra-text">
+                    <li>Atlas Taxi Inc. <a href="contact.html">Savoir plus</a></li>
+                  </ul>
+                  <ul class="social-list">
+                    <!-- Atlas Taxi Future Social Medias -->
+                    <li><a href="" target="_self"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="" target="_self"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="" target="_self"><i class="fab fa-instagram"></i></a></li>
+                    <li>
+                      <form action="" id="language-selector">
+                        <select name="languages" id="languages" onchange="changeLanguage(this.value)">
+                          <option value="french" id="french" selected>Français</option>
+                          <option value="english" id="english">English</option>
+                        </select>
+                      </form>
+                    </li>
+                  </ul>
+                </div>
               </div>
+            </div>
           </div>
-      </header>
+        </div>
+      </div>
+      <div class="main-header">
+        <div class="area-wrap">
+          <div class="container-fluid mainbar-container">
+            <div class="mainbar">
+              <div class="mainbar-row row">
+                <div class="col logo-col">
+                  <div id="site-logo" class="site-logo">
+                    <a href="index.html">
+                      <img src="images/logo.png" alt="AtlasTaxiLogo" class="">
+                    </a>
+                  </div>
+                </div>
+                <div class="col menu-col">
+                  <nav id="site-navigation" class="main-navigation">
+                    <ul class="menu">
+                      <li>
+                        <a href="index.html">Accueil</a>
+                      </li>
+                      <li><a href="about.html">À propos</a>
+                      </li>
+                      <li><a href="#">Services</a>
+                      </li>
+                      <li><a href="#">Ouvrir un Compte</a>
+                      </li>
+                      <li><a href="https://atlastaxi.megataxi.com/">Appelez-moi un Taxi</a>
+                      </li>
+                      <li><a href="#">Tarifs des taxis</a>
+                      </li>
+                      <li><a href="#">Contact</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="col cta-col text-right">
+                  <!-- Call To Action -->
+                  <div class="btn-cta">
+                    <div class="header-module">
+                      <div class="btn-cta-group contact-header">
+                        <i class="fas fa-phone"></i>
+                        <div class="cinfo-header">
+                          <span>Avez-vous des questions?</span>
+                          <span class="small-text" style="margin-right: 10px;"><a href="tel:+1-514-485-8585">+1 (514)
+                              485-8585 </a></span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header_mobile">
+        <div class="container">
+          <div class="mlogo_wrapper clearfix">
+            <div class="mobile_logo">
+              <a href="index.html">
+                <img src="images/logo.png" alt="Atlas Taxi Inc.">
+              </a>
+            </div>
+            <div id="mmenu_toggle">
+              <button></button>
+            </div>
+          </div>
+          <div class="mmenu_wrapper">
+            <div class="mobile_nav collapse">
+              <ul id="menu-main-menu" class="mobile_mainmenu">
+                <li>
+                  <a href="index.html">Accueil</a>
+                </li>
+                <li><a href="about.html">À propos</a>
+                </li>
+                <li><a href="#">Ouvrir un Compte</a>
+                </li>
+                <li><a href="https://atlastaxi.megataxi.com/">Appelez-moi un Taxi</a>
+                </li>
+                <li><a href="#">Tarifs des taxis</a>
+                </li>
+                </li>
+                <li><a href="#">Contact</a></li>
+                <li>
+                  <form action="" id="language-selector">
+                    <select name="languages" id="languages" onchange="changeLanguage(this.value)">
+                      <option value="french" selected>Français</option>
+                      <option value="english">English</option>
+                    </select>
+                  </form>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <div id="page" class="site">
       <div id="content" class="site-content">
         <section class="coming-soon">
@@ -167,22 +164,11 @@
                     class="attachment-full size-full"
                     alt=""
                   /> -->
-                  <p style="margin-top: 350px;">Pour l`instant notre site se trouve en préparation.</p>
+                  <!-- <p style="margin-top: 350px;">Pour l`instant notre site se trouve en préparation.</p>
                   <h2>En cours de réalisation...</h2>
-                  <ul
-                    class="ot-countdown unstyle"
-                    data-zone="0"
-                    data-date="01/04/2023"
-                    data-day="Day"
-                    data-days="Days"
-                    data-hour="Hour"
-                    data-hours="Hours"
-                    data-min="Minute"
-                    data-mins="Minutes"
-                    data-second="Second"
-                    data-seconds="Seconds"
-                    id="rev_slider_1"
-                  >
+                  <ul class="ot-countdown unstyle" data-zone="0" data-date="01/04/2023" data-day="Day" data-days="Days"
+                    data-hour="Hour" data-hours="Hours" data-min="Minute" data-mins="Minutes" data-second="Second"
+                    data-seconds="Seconds" id="rev_slider_1">
                     <li>
                       <span class="days" id="t_days"></span>
                       <p class="days_text">Jours</p>
@@ -202,7 +188,7 @@
                       <span class="seconds" id="t_seconds"></span>
                       <p class="seconds_text">Secondes</p>
                     </li>
-                  </ul>
+                  </ul> -->
                 </div>
               </div>
             </div>
@@ -215,24 +201,17 @@
                 <p>Nous sommes toujours ravis de vous aider 24/7</p>
                 <h2>Il me faut un taxi!</h2>
                 <div class="ot-button">
-                  <a
-                    href="https://atlastaxi.megataxi.com/"
-                    class="octf-btn octf-btn-primary"
-                    >Appelez pour un taxi</a
-                  >
+                  <a href="https://atlastaxi.megataxi.com/" class="octf-btn octf-btn-primary">Appelez pour un taxi</a>
                 </div>
               </div>
             </div>
             <div class="space-30"></div>
             <div class="row">
               <div class="col-md-12 text-center">
-                <a href="https://apps.apple.com/ca/app/taxi-atlas/id824050255"
-                  ><img src="images/btn-ios.png" width="15%" alt="ios"
-                /></a>
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.megataxi.android.atlastaxi2"
-                  ><img src="images/btn-android.png" width="15%" alt="android"
-                /></a>
+                <a href="https://apps.apple.com/ca/app/taxi-atlas/id824050255"><img src="images/btn-ios.png" width="15%"
+                    alt="ios" /></a>
+                <a href="https://play.google.com/store/apps/details?id=com.megataxi.android.atlastaxi2"><img
+                    src="images/btn-android.png" width="15%" alt="android" /></a>
               </div>
             </div>
           </div>
@@ -244,23 +223,25 @@
             <div class="col-md-4 col-sm-6">
               <div class="contact-info box-style2 ft-contact-info">
                 <div class="box-icon"><i class="flaticon-world-globe"></i></div>
-                <a href="https://goo.gl/maps/oY5ikkaUkgrHaGXJ9"
-                  ><p>2194 av Regent, Montréal, QC H4A 2R1</p></a
-                >
+                <a href="https://goo.gl/maps/oY5ikkaUkgrHaGXJ9">
+                  <p>2194 av Regent, Montréal, QC H4A 2R1</p>
+                </a>
               </div>
             </div>
             <div class="col-md-4 col-sm-6">
               <div class="contact-info box-style2 ft-contact-info">
                 <div class="box-icon"><i class="flaticon-envelope"></i></div>
-                <a href="mailto: info@atlastaxi.qc.ca"
-                  ><p>info@atlastaxi.qc.ca</p></a
-                >
+                <a href="mailto: info@atlastaxi.qc.ca">
+                  <p>info@atlastaxi.qc.ca</p>
+                </a>
               </div>
             </div>
             <div class="col-md-4 col-sm-6">
               <div class="contact-info box-style2 ft-contact-info">
                 <div class="box-icon"><i class="flaticon-phone-1"></i></div>
-                <a href="tel:+1 514-485-8585"><p>+1 (514) 485-8585</p></a>
+                <a href="tel:+1 514-485-8585">
+                  <p>+1 (514) 485-8585</p>
+                </a>
               </div>
             </div>
           </div>
@@ -296,20 +277,15 @@
       })(jQuery);
     </script>
     <script defer>
-      let selectedLanguage = localStorage.getItem('selectedLanguage')
-    //   if(selectedLanguage==='french') {
-    //     document.getElementById('fr').setAttribute('selected','selected')
-    //   }
-    //   if(selectedLanguage==='english') {
-    //     document.getElementById('en').setAttribute('selected','selected')
-    // }
-    </script>
-    <script defer>
+      let selectedLanguage_localStorage = localStorage.getItem('selectedLanguage')
+      //TODO: adding the localstorage for language
       const changeLanguage = (selected) => {
+        // customeLanguage = true
         localStorage.setItem('selectedLanguage', selected)
         if (selected === "english") {
           location.href = "http://atlastaxi.qc.ca/index-en.html";
-        } else {
+        }
+        if (selected === "french") {
           location.href = "http://atlastaxi.qc.ca/index.html";
         }
       };
@@ -334,5 +310,6 @@
         }
       }, 1000);
     </script>
-  </body>
+</body>
+
 </html>
