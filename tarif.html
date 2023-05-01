@@ -98,6 +98,7 @@
                       </div>
                     </div>
                   </div>
+
                 </div>
               </div>
             </div>
@@ -148,42 +149,69 @@
     </div>
   </header>
   <div id="content" class="site-content">
-    <section class="about-v5">
-      <div class="overlay overlay-image-about5"></div>
+
+
+    <section class="pricing-table-i6">
+      <div class="overlay"></div>
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 align-self-center">
-            <div class="pabout-left">
-              <img src="images/about-us-page.png" alt="about Atlas Taxi Inc.">
+          <div class="col-xl-4 col-lg-12 mb-5 mb-xl-0">
+            <div class="ot-heading s2">
+              <span>Tarif de taxi</span>
+              <h2 class="main-heading">Atlas Taxi</h2>
+            </div>
+            <div class="space-20"></div>
+            <p class="mr-70">Êtes-vous à Montréal et souhaitez-vous connaître le coût d'un taxi pour venir vous chercher et
+              vous emmener partout où vous en avez besoin? Consultez la liste de prix suivante pour avoir une idée du prix de votre voyage.
+            </p>
+            <div class="space-55"></div>
+            <div class="ot-button">
+              <a href="contact.html" class="octf-btn octf-btn-second btn-round">Savoir Plus?</a>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="pabout-right">
-              <div class="ot-heading">
-                <span>// Atlas Taxi Inc</span>
-                <h2 class="main-heading">À propos de nous</h2>
+          <div class="col-xl-4 col-lg-6 mb-5 mb-xl-0">
+            <div class="ot-pricing-table-s2 s1">
+              <div class="featured">le Matin</div>
+              <h4 class="title-table">5 - 22h59</h4>
+              <div class="price"><sup>$</sup>5,15<span>Base</span><br><span style="font-size: small;">Inclus 1,05$ (0,90$+taxes) redevance imposée par le gouvernement du Québec</span></div>
+              <div class="details">
+                <ul>
+                  <li>
+                    <div class="price" style="text-transform: lowercase;"><sup>$</sup>2,05<span>/
+                      Kilomètre</span><br><span>Pour la distance parcourue</span></div>
+                  </li>
+                </ul>
               </div>
-              <h5>Aperçu</h5>
-              <p>Nous avons commencé nos opérations le 1er juin 1988 avec un simple téléphone de bureau, une station de
-                radio simplex sur le toit de notre immeuble et une flotte de 30 voitures compactes entièrement basées à
-                Westmount.
-
-                Malgré la récession du début des années 90 et la situation difficile, notre entreprise a connu une
-                croissance constante et régulière tout au long de ses 24 ans d'histoire.
-
-                Nous fournissons un service de taxi dans tout le West End et le centre-ville avec 235 véhicules. Tous
-                nos véhicules sont de grosses voitures. Plus de 100 voitures de luxe entièrement équipées sont hybrides
-                (2 ans ou moins). Nous avons également des mini-fourgonnettes disponibles pour les petits travaux de
-                déménagement.
-
-                Au cours des douze derniers mois, nous avons reçu et expédié plus de 800 000 appels. Pour gérer ce
-                volume de trafic, nous utilisons maintenant 30 lignes téléphoniques et trois canaux radio diffusant à
-                partir de notre nouvel émetteur au sommet de la montagne. Tous nos véhicules sont équipés de système
-                GPS.
-
-                Notre entreprise s'adresse à la fois aux clients résidentiels et commerciaux.</p>
-              <div class="ot-button">
-                <a href="" class="btn-details"><i class="flaticon-right-arrow-1"></i> Contactez-nous</a>
+              <div class="details">
+                <ul>
+                  <li>
+                    <div class="price" style="text-transform: lowercase;"><sup>$</sup>0,77<span>/
+                        Minute</span><br><span>Pour le temps d'attente</span></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-6">
+            <div class="ot-pricing-table-s2 s1">
+              <div class="featured2">la Nuit</div>
+              <h4 class="title-table">23 - 4h59</h4>
+              <div class="price"><sup>$</sup>5,75<span>Base</span><br><span style="font-size: small;">Inclus 1,05$ (0,90$+taxes) redevance imposée par le gouvernement du Québec</span></div>
+              <div class="details">
+                <ul>
+                  <li>
+                    <div class="price" style="text-transform: lowercase;"><sup>$</sup>2,35<span>/
+                      Kilomètre</span><br><span>Pour la distance parcourue</span></div>
+                  </li>
+                </ul>
+              </div>
+              <div class="details">
+                <ul>
+                  <li>
+                    <div class="price" style="text-transform: lowercase;"><sup>$</sup>0,89<span>/
+                        Minute</span><br><span>Pour le temps d'attente</span></div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -213,7 +241,6 @@
       </div>
     </section>
   </div>
-
   <footer id="site-footer" class="site-footer footer-v2">
     <div class="container">
       <div class="row justify-content-center">
@@ -263,10 +290,10 @@
       // customeLanguage = true
       localStorage.setItem('selectedLanguage', selected)
       if (selected === "english") {
-        location.href = "http://atlastaxi.qc.ca/about-en.html";
+        location.href = "http://atlastaxi.qc.ca/tarif-en.html";
       }
       if (selected === "french") {
-        location.href = "http://atlastaxi.qc.ca/about.html";
+        location.href = "http://atlastaxi.qc.ca/tarif.html";
       }
     };
   </script>
