@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Demande de compte Atlas Charge</title>
+    <title>Atlas Charge Account Application</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
@@ -149,15 +149,12 @@
             padding: 10px;
             border: none;
             border-radius: 5px;
-            background: #095484;
             font-size: 16px;
-            color: #fff;
-            cursor: pointer;
         }
 
-        button:hover {
+        /* button:hover {
             background: #0666a3;
-        }
+        } */
 
         @media (min-width: 568px) {
 
@@ -199,13 +196,12 @@
                         www.atlastaxi.qc.ca
 
                     </a>
-                    Tel : 485-8585 Fax : 485-0946
+                     Tel : 485-8585 Fax : 485-0946
 
                 </p>
 
                 <div class="item">
-                    <p>Name:<span class="required">*</span></p>
-
+                    <label>Nom et prénom:<span class="required">*</span></label>
                     <div class="name-item">
                         <input type="text" name="fname" placeholder="Prénom" required />
                         <input type="text" name="lname" placeholder="Nom" required />
@@ -214,48 +210,51 @@
 
                 <div class="item">
                     <p>Address:<span class="required">*</span></p>
-                    <input type="text" name="address" required />
+                    <input type="text" name="address" placeholder="adresse de facturation" required />
 
                     <div class="question">
                         <div class="question-answer">
-                            How long have you been living at this address?<span class="required">*</span>
+                            Statut de propriété de l'adresse<span class="required">*</span>
                             <label><input type="radio" value="owner" name="owner" required /> <span>Propriétaire</span></label>
-                            <label><input type="radio" value="tenant" name="tenant" required /><span>Locataire</span></label>
+                            <label><input type="radio" value="tenant" name="tenant" required /><span>locataire</span></label>
                         </div>
                     </div>
 
                 </div>
 
                 <div class="item">
+                    <label>Contact:<span class="required"></span></label>
                     <div class="name-item">
-                        <input type="tel" name="phone" placeholder="Téléphone" required />
-                        <input type="tel" name="mobile" placeholder="Cellulair" required />
+                        <input type="tel" name="phone" placeholder="Téléphone"/>
+                        <input type="tel" name="mobile" placeholder="Cellulair"/>
                     </div>
                 </div>
 
                 <div class="item">
-                    <p>e-mail:<span class="required">*</span>(Nous pouvons envoyer des factures par e-mail)</p>
+                    <p>Address Courriel:<span class="required">*</span> (Nous pouvons envoyer des factures par e-mail)</p>
                     <input type="email" name="email" required />
                 </div>
                 <div class="item">
+                    <!-- <label>Legal information:<span class="required"></span></label> -->
                     <div class="name-item">
-                        <input type="number" name="sin" placeholder="NAS" required />
-                        <input type="date" name="dob" placeholder="Date de Naissance" required />
+                        <input type="number" name="sin" placeholder="NAS" required disabled/>
+                        <input type="date" name="dob" placeholder="Date de naissance" required />
                     </div>
                 </div>
                 <hr><br>
                 <div class="item">
+                    <label>Entreprise:<span class="required"></span></label>
                     <div class="name-item">
-                        <input type="text" name="employer" placeholder="Employeur" required />
-                        <input type="text" name="position" placeholder="Post" required />
-                        <input type="text" name="contact" placeholder="Contact" required />
+                        <input type="text" name="employer" placeholder="Employeur" />
+                        <input type="text" name="position" placeholder="Post" />
+                        <input type="text" name="contact" placeholder="Contact" />
                     </div>
                 </div>
                 <!-- <div class="question">
 
                     <div class="question-answer">
-                        Card de Credit:<span class="required">*</span>
-                        <label><input type="radio" value="visa" name="visa" required /><span></span>Visa</label>
+                        Credit Card:<span class="required">*</span>
+                        <label><input type="radio" value="none" name="visa" required /><span></span>Visa</label>
                         <label><input type="radio" value="none" name="Amex" required />Amex</label>
                         <label><input type="radio" value="none" name="MasterCard" required />
                             <span></span>MasterCard</label>
@@ -264,7 +263,7 @@
 
 
                 <div class="btn-block">
-                    <button type="submit" href="/">Demander</button>
+                    <button type="button" disabled>Demander</button>
                 </div>
         </form>
     </div>

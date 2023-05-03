@@ -149,15 +149,12 @@
             padding: 10px;
             border: none;
             border-radius: 5px;
-            background: #095484;
             font-size: 16px;
-            color: #fff;
-            cursor: pointer;
         }
 
-        button:hover {
+        /* button:hover {
             background: #0666a3;
-        }
+        } */
 
         @media (min-width: 568px) {
 
@@ -199,13 +196,12 @@
                         www.atlastaxi.qc.ca
 
                     </a>
-                    Tel : 485-8585 Fax : 485-0946
+                     Tel : 485-8585 Fax : 485-0946
 
                 </p>
 
                 <div class="item">
-                    <p>Name:<span class="required">*</span></p>
-
+                    <label>Full Name:<span class="required">*</span></label>
                     <div class="name-item">
                         <input type="text" name="fname" placeholder="First Name" required />
                         <input type="text" name="lname" placeholder="Last Name" required />
@@ -214,11 +210,11 @@
 
                 <div class="item">
                     <p>Address:<span class="required">*</span></p>
-                    <input type="text" name="address" required />
+                    <input type="text" name="address" placeholder="billing address" required />
 
                     <div class="question">
                         <div class="question-answer">
-                            How long have you been living at this address?<span class="required">*</span>
+                            Address Ownership Status<span class="required">*</span>
                             <label><input type="radio" value="owner" name="Owner" required /> <span>Owner</span></label>
                             <label><input type="radio" value="tenant" name="Tenant" required /><span>Tenant</span></label>
                         </div>
@@ -227,28 +223,31 @@
                 </div>
 
                 <div class="item">
+                    <label>Contact:<span class="required"></span></label>
                     <div class="name-item">
-                        <input type="tel" name="phone" placeholder="Phone" required />
-                        <input type="tel" name="mobile" placeholder="Mobile" required />
+                        <input type="tel" name="phone" placeholder="Phone"/>
+                        <input type="tel" name="mobile" placeholder="Cellular"/>
                     </div>
                 </div>
 
                 <div class="item">
-                    <p>Email:<span class="required">*</span>(We can send invoices by email)</p>
+                    <p>Email:<span class="required">*</span> (We can send invoices by email)</p>
                     <input type="email" name="email" required />
                 </div>
                 <div class="item">
+                    <!-- <label>Legal information:<span class="required"></span></label> -->
                     <div class="name-item">
-                        <input type="number" name="sin" placeholder="SIN#" required />
+                        <input type="number" name="sin" placeholder="SIN#" required disabled/>
                         <input type="date" name="dob" placeholder="Date Of Birth" required />
                     </div>
                 </div>
                 <hr><br>
                 <div class="item">
+                    <label>Company:<span class="required"></span></label>
                     <div class="name-item">
-                        <input type="text" name="employer" placeholder="Employer" required />
-                        <input type="text" name="position" placeholder="Position" required />
-                        <input type="text" name="contact" placeholder="Contact" required />
+                        <input type="text" name="employer" placeholder="Employer" />
+                        <input type="text" name="position" placeholder="Position" />
+                        <input type="text" name="contact" placeholder="Contact" />
                     </div>
                 </div>
                 <!-- <div class="question">
@@ -264,7 +263,7 @@
 
 
                 <div class="btn-block">
-                    <button type="submit" href="/">Apply</button>
+                    <button type="button" disabled>Apply</button>
                 </div>
         </form>
     </div>
